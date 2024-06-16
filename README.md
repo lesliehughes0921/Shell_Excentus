@@ -34,31 +34,24 @@ Reporting:
 
 Generate an Excel sheet showing total receivable and payable amounts per customer.
 
+## Insructions
 
-### Instructions
 1. Clone the repo to your machine.
 2. Create and activate a virtual environment and install the packages llisted in the requirements.txt file (instructions below)
-3. Run the 
+3. Run the main.py script. This script will execute creating two new excel files May_2024_Excentus.xlsx and May_Vendor_Funded_Discounts.xlsx
 
-Set up a virtual environment:
+###  Virutal Environment Instructions
 
-bash
-Copy code
-python -m venv venv
-Activate the virtual environment:
+1. After you have cloned the repo to your machine, navigate to the folder in GitBash/Terminal.
+1. Create a virtual environment in the folder. 
+1. Activate the virtual environment.
+1. Install the required packages. 
+1. When you are done working on your repo, deactivate the virtual environment.
 
-Windows:
-bash
-Copy code
-venv\Scripts\activate
-Unix or MacOS:
-bash
-Copy code
-source venv/bin/activate
-Install dependencies from requirements.txt:
-
-bash
-Copy code
-pip install -r requirements.txt
-Execute the project scripts as needed.
-
+Virtual Environment Commands
+| Command | Linux/Mac | GitBash |
+| ------- | --------- | ------- |
+| Create | `python3 -m venv venv` | `python -m venv venv` |
+| Activate | `source venv/bin/activate` | `source venv/Scripts/activate` |
+| Install | `pip install -r requirements.txt` | `pip install -r requirements.txt` |
+| Deactivate | `deactivate` | `deactivate` |
