@@ -147,5 +147,16 @@ df_totals = pd.concat([pre_mas_entry_excentus, totals_df])
 # %%
 df_totals.to_excel("May_2024_Excentus.xlsx", index=False)
 
+# Example debugging print statement
+print("Script started...")
+
+# Your existing script code
+import pandas as pd
+
+# Example: Read and print first few rows of DataFrame
+df = pd.read_excel(r"C:\Users\lesli\github-classroom\Testing\Shell Site List 06-05-2024.xlsx")
+print(df.head())  # Print first few rows of DataFrame
+
+print("Script completed.")
 
 
