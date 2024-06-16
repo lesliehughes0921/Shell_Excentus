@@ -8,3 +8,6 @@ Extracting the current vendor discount totals from the dataframe and creating a 
 Merging of data from the grouped and total df with the vendor discount from the previous calculations 
 Adding vendor discount to accounts receivable column, creating a new total receivable column per customer 
 Creating a new excel sheet showing the total receivable and payable amounts per customer 
+
+
+# NOTE: write walk through on how to install venv, how to activate it, then how to install everythingfrom requirments
