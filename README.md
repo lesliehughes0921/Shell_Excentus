@@ -40,25 +40,3 @@ Usage
 2. Create and activate a virtual environment and install the packages llisted in the requirements.txt file (instructions below)
 3. Run the 
 
-Set up a virtual environment:
-
-bash
-Copy code
-python -m venv venv
-Activate the virtual environment:
-
-Windows:
-bash
-Copy code
-venv\Scripts\activate
-Unix or MacOS:
-bash
-Copy code
-source venv/bin/activate
-Install dependencies from requirements.txt:
-
-bash
-Copy code
-pip install -r requirements.txt
-Execute the project scripts as needed.
-
