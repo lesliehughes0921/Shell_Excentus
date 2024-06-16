@@ -1,10 +1,64 @@
-# Shell_Excentus
-Monthly Shell excentus report calculations based on three reports.  
-First report: Shell Site List provides shell merchant id, customer name, customer number, and zip code
-Second report: Site Redeemer Issuer Settlement provided on a monthly basis for each store location and their daily rewards activities. All information is provided through Shell and has no customer specific information in relationship to their customer account.
-Third report: Vendor Discount - Vendor Discount payable/receivable is for a previous month
-Merging of data from site list to site redeemer settlement, grouping by customer number and calculating totals for each store.
-Extracting the current vendor discount totals from the dataframe and creating a new Vendor Discount report to use in the future calcuations in upcoming months for settlement.
-Merging of data from the grouped and total df with the vendor discount from the previous calculations 
-Adding vendor discount to accounts receivable column, creating a new total receivable column per customer 
-Creating a new excel sheet showing the total receivable and payable amounts per customer 
+# Shell Excentus
+Code Kentucky Data Analysis
+
+## Overview
+This project automates the monthly report calculations for Shell Excentus based on three primary reports utlizing python and pandas
+Visual presentation of store location reward totals
+Visual presentation of time spend processing information manually vs code implementation
+
+## Reports Description
+
+# Shell Site List:
+Provides Shell merchant ID, customer name, customer number, and zip code.
+
+# Site Redeemer Issuer Settlement:
+Monthly report detailing each store location's daily rewards activities.
+Contains information from Shell without customer-specific details related to their accounts.
+
+# Vendor Discount:
+Provides Site ID, Site Name/Customer #, Vendor Funded Discount from previous month
+
+## Process
+Data Integration:
+
+Merge data from the Shell Site List with the Site Redeemer Issuer Settlement.
+Group data by customer number and calculate totals for each store location.
+Vendor Discount Calculation:
+
+Extract current vendor discount totals and generate a new Vendor Discount report for future months' settlements.
+Data Consolidation:
+
+Combine grouped data with previous vendor discount calculations.
+Add vendor discount to the accounts receivable column, creating a new total receivable per customer.
+Reporting:
+
+Generate an Excel sheet showing total receivable and payable amounts per customer.
+Usage
+
+### Instructions
+1. Clone the repo to your machine.
+2. Create and activate a virtual environment and install the packages llisted in the requirements.txt file (instructions below)
+3. Run the 
+
+Set up a virtual environment:
+
+bash
+Copy code
+python -m venv venv
+Activate the virtual environment:
+
+Windows:
+bash
+Copy code
+venv\Scripts\activate
+Unix or MacOS:
+bash
+Copy code
+source venv/bin/activate
+Install dependencies from requirements.txt:
+
+bash
+Copy code
+pip install -r requirements.txt
+Execute the project scripts as needed.
+
