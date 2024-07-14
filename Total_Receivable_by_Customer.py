@@ -1,5 +1,7 @@
 import os
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 def generate_path(file_name_str):
     return os.path.join(".", "data", file_name_str)
@@ -9,9 +11,16 @@ def generate_output_path(new_file_name_str):
     os.makedirs(output_dir, exist_ok=True)
     return os.path.join(output_dir, new_file_name_str)
 
-def create_visualization(df_totals):
-    # Function to create a visualization (details omitted for clarity)
-    pass
+def create_visualization(df):
+    plt.figure(figsize=(10, 6))
+    sns.barplot(x='Customer Name', y='Total Receivable', data=df)
+    plt.title('Total Receivable by Customer Name')
+    plt.xticks(rotation=45)
+    plt.ylabel('Total Receivable')
+    plt.xlabel('Customer Name')
+    plt.tight_layout()
+    plt.savefig(generate_output_path("Total_Receivable_by_Customer.png"))  # Save the plot
+    plt.show()  # Display the plot
 
 def main():
     monthly_excentus_source_df = pd.read_excel(generate_path("Site_Redeemer_Issuer_Settlement_3160398.xlsx"), skiprows=1)
@@ -34,17 +43,14 @@ def main():
 
     previous_vendor_discount_df = previous_vendor_discount_source_df.copy()
     previous_vendor_discount_df.rename(columns={"Site ID": "Customer Name", "Site Name": "Customer #"}, inplace=True)
+    
     grouped_monthly_excentus = monthly_excentus_filtered_df.groupby("Site ID").sum().reset_index()
-
     merged_site_list_excentus = pd.merge(site_list_df, grouped_monthly_excentus, on="Site ID", how="outer")
     sorted_merged_excentus = merged_site_list_excentus.sort_values(by="Customer #")
     
-    current_vendor_discount = sorted_merged_excentus[["Site ID", "Customer #", "Vendor Funded Discounts"]]
-    current_vendor_discount.to_excel(generate_output_path("May_Vendor_Funded_Discounts.xlsx"), index=False)
-
     current_month_payables_excentus = sorted_merged_excentus.drop(columns=["Vendor Funded Discounts"], inplace=False)
-    previous_vendor_discount_df = previous_vendor_discount_df.dropna()
 
+    previous_vendor_discount_df = previous_vendor_discount_df.dropna()
     merged_excentus_vd = pd.merge(previous_vendor_discount_df, current_month_payables_excentus, on="Customer #", how="outer", suffixes=("_new", "_curr"))
     merged_excentus_vd["Vendor Funded Discounts"] = merged_excentus_vd["Vendor Funded Discounts"].fillna(0)
 
