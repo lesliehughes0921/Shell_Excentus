@@ -10,7 +10,7 @@ This project automates the monthly report calculations for Shell Excentus based 
    - Linux/Mac: `python3 -m venv venv` followed by `source venv/bin/activate`
    - GitBash/Windows: `python -m venv venv` followed by `source venv/Scripts/activate`
 3. Install the required packages: `pip install -r requirements.txt`
-4. Run the main.py script to generate two Excel files: `May_2024_Excentus.xlsx` and `May_Vendor_Funded_Discounts.xlsx`.
+4. Run the excentus_main.py script to generate two Excel files: `May_2024_Excentus.xlsx` and `May_Vendor_Funded_Discounts.xlsx`.
 
 ## Virtual Environment Commands
 | Command    | Linux/Mac                          | GitBash/Windows                   |
