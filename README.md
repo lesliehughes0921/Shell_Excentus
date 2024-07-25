@@ -14,8 +14,6 @@ Check out my Tableau visualization https://public.tableau.com/views/MayExcentusC
    - GitBash/Windows: `python -m venv venv` followed by `source venv/Scripts/activate`
 3. Install the required packages: `pip install -r requirements.txt`
 4. Run the excentus_main.py script to generate two Excel files: `May_2024_Excentus.xlsx` and `May_Vendor_Funded_Discounts.xlsx`.
-5. Run the Total_Receivable_by_Customer.py for visulization of total AR per customer number.
-6. Run the visualization_savings.py to view the total hours saved and salary saved by automating the process to calculate Shell Excentus Rewards
 
 ## Virtual Environment Commands
 | Command    | Linux/Mac                          | GitBash/Windows                   |
