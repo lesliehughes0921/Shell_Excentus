@@ -2,7 +2,7 @@
 Code Kentucky Data Analysis
 
 ## Overview
-This project automates the monthly report calculations for Shell Excentus based on three primary reports using Python and Pandas. It includes visual presentations of store location reward totals and a comparison of time spent processing information manually versus code implementation. This project automates the calculation of monthly reports for Shell Excentus, providing visual insights into rewards and discounts
+This project automates the monthly report calculations for Shell Excentus based on three primary reports using Python and Pandas. It includes visual presentations of store location reward totals and a comparison of time spent processing information manually versus code implementation. Automating the calculation of monthly reports for Shell Excentus, providing visual insights into rewards and discounts
 
 ## Instructions
 1. Clone the repo to your machine.
