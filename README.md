@@ -47,3 +47,6 @@ Provides Site ID, Site Name/Customer #, Vendor Funded Discount from the previous
 
 ### Reporting
 - Generate an Excel sheet showing total receivable and payable amounts per customer.
+- Generate Total_Receivable_by_Customer for visulization of total AR per customer number.
+- Generate visualization_savings to view the total hours saved and salary saved by automating the process to calculate Shell Excentus Rewards
+
