@@ -4,6 +4,9 @@ Code Kentucky Data Analysis
 ## Overview
 This project automates the monthly report calculations for Shell Excentus based on three primary reports using Python and Pandas. It includes visual presentations of store location reward totals and a comparison of time spent processing information manually versus code implementation.
 
+## Tableau Visualization
+Check out my Tableau visualization https://public.tableau.com/views/MayExcentusCustomerAccountsPayablevsReceivable/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
 ## Instructions
 1. Clone the repo to your machine.
 2. Create and activate a virtual environment:
