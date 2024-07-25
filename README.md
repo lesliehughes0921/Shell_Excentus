@@ -5,7 +5,7 @@ Code Kentucky Data Analysis
 This project automates the monthly report calculations for Shell Excentus based on three primary reports using Python and Pandas. It includes visual presentations of store location reward totals and a comparison of time spent processing information manually versus code implementation.
 
 ## Tableau Visualization
-Check out my Tableau visualization https://public.tableau.com/views/MayExcentusCustomerAccountsPayablevsReceivable/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+Check out my Tableau visualization [here](https://public.tableau.com/views/MayExcentusCustomerAccountsPayablevsReceivable/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
 
 ## Instructions
 1. Clone the repo to your machine.
@@ -13,15 +13,15 @@ Check out my Tableau visualization https://public.tableau.com/views/MayExcentusC
    - Linux/Mac: `python3 -m venv venv` followed by `source venv/bin/activate`
    - GitBash/Windows: `python -m venv venv` followed by `source venv/Scripts/activate`
 3. Install the required packages: `pip install -r requirements.txt`
-4. Run the excentus_main.py script to generate two Excel files: `May_2024_Excentus.xlsx` and `May_Vendor_Funded_Discounts.xlsx`.
+4. Run the `excentus_main.py` script to generate two Excel files: `May_2024_Excentus.xlsx` and `May_Vendor_Funded_Discounts.xlsx`. Generate visualizations of salary saved by automated process vs manual completion and total receivable by customer.
 
 ## Virtual Environment Commands
 | Command    | Linux/Mac                          | GitBash/Windows                   |
 |------------|------------------------------------|-----------------------------------|
-| Create     | `python3 -m venv venv`              | `python -m venv venv`             |
-| Activate   | `source venv/bin/activate`          | `source venv/Scripts/activate`    |
-| Install    | `pip install -r requirements.txt`   | `pip install -r requirements.txt`|
-| Deactivate | `deactivate`                        | `deactivate`                      |
+| Create     | `python3 -m venv venv`             | `python -m venv venv`             |
+| Activate   | `source venv/bin/activate`         | `source venv/Scripts/activate`    |
+| Install    | `pip install -r requirements.txt`  | `pip install -r requirements.txt` |
+| Deactivate | `deactivate`                       | `deactivate`                      |
 
 ## Reports Description
 
@@ -32,7 +32,7 @@ Provides Shell merchant ID, customer name, customer number, and zip code.
 Monthly report detailing each store location's daily rewards activities. Contains information from Shell without customer-specific details related to their accounts.
 
 ### Vendor Discount
-Provides Site ID, Site Name/Customer #, Vendor Funded Discount from the previous month.
+Provides Site ID, Site Name/Customer #, and Vendor Funded Discount from the previous month.
 
 ## Process
 ### Data Integration
@@ -48,5 +48,5 @@ Provides Site ID, Site Name/Customer #, Vendor Funded Discount from the previous
 
 ### Reporting
 - Generate an Excel sheet showing total receivable and payable amounts per customer.
-- Generate visualization_savings to view the total hours saved and salary saved by automating the process to calculate Shell Excentus Rewards
-- Generate Total_Receivable_by_Customer for visulization of total AR per customer number.
+- Generate visualizations to view the total hours saved and salary saved by automating the process to calculate Shell Excentus Rewards.
+- Generate visualizations of total accounts receivable per customer number.
